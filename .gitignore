@@ -1,0 +1,6 @@
+application/configs/application.ini
+.project
+.settings
+.buildpath
+library/Doctrine
+library/Symfony

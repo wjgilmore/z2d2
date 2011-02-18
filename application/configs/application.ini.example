@@ -1,0 +1,55 @@
+[production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+resources.frontController.params.displayExceptions = 1
+resources.layout.layoutPath = APPLICATION_PATH "/layouts/scripts/"
+resources.layout.layoutPath = APPLICATION_PATH "/layouts/scripts/"
+
+includePaths.library = APPLICATION_PATH "/../library"
+includePaths.library = APPLICATION_PATH "/../library/Doctrine"
+includePaths[] = APPLICATION_PATH "/../views"
+
+pluginPaths.WJG_Resource = "WJG/Resource"
+
+bootstrap.path = APPLICATION_PATH "/Bootstrap.php"
+bootstrap.class = "Bootstrap"
+
+autoloaderNamespaces[] = "Doctrine"
+autoloaderNamespaces[] = "WJG"
+autoloaderNamespaces[] = "Symfony"
+
+appnamespace = "Application"
+
+resources.frontController.controllerDirectory = APPLICATION_PATH "/controllers"
+
+resources.frontController.actionhelperpaths.WJG_Controller_Action_Helper = APPLICATION_PATH "/../library/WJG/Controller/Action/Helper"
+
+;---------------------------------------------------
+; DOCTRINE CONFIGURATION
+;---------------------------------------------------
+resources.entityManager.connection.driver = "pdo_mysql"
+resources.entityManager.connection.host = "localhost"
+resources.entityManager.connection.dbname = "dev_z2d2"
+resources.entityManager.connection.user = "YOUR_MYSQL_USER"
+resources.entityManager.connection.password = "YOUR_MYSQL_PASSWORD"
+resources.entityManager.connection.entities = "/ABSOLUTE/PATH/TO/z2d2/application/models"
+resources.entityManager.connection.proxies.location = "/ABSOLUTE/PATH/TO/z2d2/application/models/Proxies"
+resources.entityManager.connection.proxies.ns = "Proxies"
+
+; According to Doctrine manual, this should be true for 
+; development, and false for production
+resources.entityManager.connection.proxies.generate = true
+
+[staging : production]
+
+[testing : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+
+[development : production]
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
+resources.frontController.params.displayExceptions = 1
+
+
+
