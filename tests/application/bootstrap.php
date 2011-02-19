@@ -22,5 +22,5 @@ var_dump(get_include_path());
 define('APPLICATION_ENV', 'testing');
 
 require_once 'controllers/ControllerTestCase.php';
-require_once 'ModelTestCase.php';
+require_once 'models/ModelTestCase.php';
 

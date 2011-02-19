@@ -42,7 +42,6 @@ class Game
         $this->accounts[] = $account;
     }
     
-    
     public function getAccounts()
     {
       return $this->accounts;
