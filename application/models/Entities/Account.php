@@ -52,13 +52,19 @@ class Account
       $this->created = $this->updated = new \DateTime("now");
     }
    
+    /**
+     * Add game to account.
+     * @param Game $game
+     */
     public function addGame(Game $game)
     {
-        $game->addAccount($this); // synchronously updating inverse side
+        $game->addAccount($this);
         $this->games[] = $game;
     }
     
-    
+    /**
+     * Retrieve account's associated games.
+     */
     public function getGames()
     {
       return $this->games;
@@ -72,6 +78,9 @@ class Account
         $this->updated = new \DateTime("now");
     }
 
+    /**
+     * Retrieve account id
+     */
     public function getId()
     {
         return $this->id;
