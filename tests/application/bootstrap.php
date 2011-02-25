@@ -17,7 +17,6 @@ set_include_path(implode(PATH_SEPARATOR, array(
     realpath(APPLICATION_PATH . '/../application/models'),
     get_include_path(),
 )));
-var_dump(get_include_path());
 
 define('APPLICATION_ENV', 'testing');
 
