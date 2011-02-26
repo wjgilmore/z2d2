@@ -13,10 +13,16 @@ abstract class ControllerTestCase extends Zend_Test_PHPUnit_ControllerTestCase
         return parent::setUp();
     }
 
+    public function tearDown()
+    {
+      parent::tearDown();
+    }
+
     public function appBootstrap()
     {
 
-        $this->application = new Zend_Application(APPLICATION_ENV, APPLICATION_PATH . '/configs/application.ini');
+        $this->application = new Zend_Application(APPLICATION_ENV, 
+          APPLICATION_PATH . '/configs/application.ini');
 
         $this->application->bootstrap();
 
