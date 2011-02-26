@@ -10,14 +10,18 @@ class ModelTestCase extends PHPUnit_Framework_TestCase
   public function setUp()
   {
     
-    $this->appBootstrap();
-     
-    //$this->doctrineContainer->getEntityManager()->getMetadataFactory()->getAllMetadata()
-    
-  
-    //$tool = new \Doctrine\ORM\Tools\SchemaTool($this->em);
-    //$tool->createSchema('/var/www/z2d2/application/models/Entities');
+    $this->application = new Zend_Application('testing', APPLICATION_PATH . '/configs/application.ini');
 
+    $this->application->bootstrap();
+
+    $bootstrap = $this->application->getBootstrap();
+
+    $this->em = $bootstrap->getResource('entityManager'); 
+    
+    $front = $bootstrap->getResource('FrontController');
+
+    $front->setParam('bootstrap', $bootstrap);
+     
     parent::setUp();
     
   }
@@ -26,22 +30,5 @@ class ModelTestCase extends PHPUnit_Framework_TestCase
   {
     parent::tearDown();
   }
-
-  public function appBootstrap()
-  {
-
-      $this->application = new Zend_Application(APPLICATION_ENV, APPLICATION_PATH . '/configs/application.ini');
-
-      $this->application->bootstrap();
-
-      $bootstrap = $this->application->getBootstrap();
-
-      $this->em = $bootstrap->getResource('entityManager'); 
-      
-      $front = $bootstrap->getResource('FrontController');
-
-      $front->setParam('bootstrap', $bootstrap);
-
- }  
   
 }
