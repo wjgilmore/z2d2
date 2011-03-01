@@ -1,7 +1,7 @@
-<phpunit bootstrap="./application/bootstrap.php"  colors="true">
-	<testsuite name="z2d2">
-		<directory>./</directory>
-	</testsuite>
+<phpunit bootstrap="./application/bootstrap.php" colors="true">
+  <testsuite name="z2d2">
+    <directory>./</directory>
+  </testsuite>
 
   <filter>
     <whitelist>
@@ -13,5 +13,11 @@
       </exclude>
     </whitelist>
   </filter>
+
+  <logging>
+    <log type="coverage-html" target="/var/www/z2d2/tests/log/report" charset="UTF-8"
+         yui="true" highlight="true" lowUpperBound="50" highLowerBound="80"/>
+    <log type="testdox-html" target="/var/www/z2d2/tests/log/testdox.html" />
+  </logging>
 
 </phpunit>

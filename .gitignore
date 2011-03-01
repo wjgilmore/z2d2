@@ -4,3 +4,4 @@ application/configs/application.ini
 .buildpath
 library/Doctrine
 library/Symfony
+tests/log
