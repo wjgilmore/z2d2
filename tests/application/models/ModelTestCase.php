@@ -10,18 +10,15 @@ class ModelTestCase extends PHPUnit_Framework_TestCase
   public function setUp()
   {
     
-    $this->application = new Zend_Application('testing', APPLICATION_PATH . '/configs/application.ini');
+    $this->application = new Zend_Application(
+      'testing', 
+      APPLICATION_PATH . '/configs/application.ini'
+    );
 
-    $this->application->bootstrap();
+    $this->bootstrap = $this->application->bootstrap()->getBootstrap();
 
-    $bootstrap = $this->application->getBootstrap();
-
-    $this->em = $bootstrap->getResource('entityManager'); 
+    $this->em = $this->bootstrap->getResource('entityManager'); 
     
-    $front = $bootstrap->getResource('FrontController');
-
-    $front->setParam('bootstrap', $bootstrap);
-     
     parent::setUp();
     
   }
