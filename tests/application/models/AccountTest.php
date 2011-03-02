@@ -1,6 +1,6 @@
 <?php
 
-class AccountTest extends ModelTestCase
+class AccountModelTest extends ModelTestCase
 {
   
   public function testCanInstantiateAccount()
