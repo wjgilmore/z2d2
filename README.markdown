@@ -1,6 +1,6 @@
 README
 ===========
-z2d2 is a companion project to Chapter 7 ("Integrating Doctrine 2") of the forthcoming book, [Easy PHP Websites with the Zend Framework, Second Edition](http://www.wjgilmore.com), authored by W. Jason Gilmore and published by [WJ Gilmore, LLC](http://www.wjgilmore.com). This project provides readers with a Zend Framework-driven website configured to use Doctrine 2.
+z2d2 is a companion project to Chapter 7 ("Integrating Doctrine 2") of the book, [Easy PHP Websites with the Zend Framework, Second Edition](http://www.wjgilmore.com), authored by W. Jason Gilmore and published by [WJ Gilmore, LLC](http://www.wjgilmore.com). This project provides readers with a Zend Framework-driven website configured to use Doctrine 2.
 
 Chapter 7 introduces key Doctrine 2 features based on code found throughout this project. You'll learn:
 
@@ -62,14 +62,7 @@ A PDF version of Chapter 7, "Integrating Doctrine 2", is available for download 
 
 BUY THE BOOK
 ===========
-"Easy PHP Websites with the Zend Framework, Second Edition" is slated to be released in e-book format in late February, 2011. This book includes several sample projects, including all source code for GameNomad, a sample social networking website for video gamers which forms the basis for many of the book's examples.
-
-To celebrate the book's pending release, interested readers can preorder the book for $20. This special price will be good until the day the book publishes, at which time the price will increase to $30. Once published, all readers will be
-notified via e-mail of the book's availability and will be able to download the book in PDF and ePub format, along with all of the sample code.
-
-Preorder the book now at [http://www.wjgilmore.com/](http://www.wjgilmore.com/).
-
-Once an initial round of bugs have been reported and fixed, a print version will be released in late spring of 2011.
+"Easy PHP Websites with the Zend Framework, Second Edition" is available as a DRM-free PDF via WJGilmore.com, in Kindle format via Amazon.com, and in Nook format via BN.com. This book includes several sample projects, including all source code for GameNomad, a sample social networking website for video gamers which forms the basis for many of the book's examples.
 
 ABOUT THE AUTHOR
 ===========

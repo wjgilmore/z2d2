@@ -9,7 +9,6 @@
       <exclude>
       	<file>../application/bootstrap.php</file>
       	<file>../application/controllers/ErrorController.php</file>
-        <directory suffix=".phtml">../application/</directory>
         <directory>../application/scripts</directory>
       </exclude>
     </whitelist>
